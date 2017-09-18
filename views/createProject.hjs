@@ -1,0 +1,13 @@
+<!DOCTYPE=html>
+<html>
+    <head>
+        <title>CreateProject</title>
+    </head>
+    <body>
+        <form action="/api/project" method="POST">
+            <input type="text" name="name" placeholder="Enter a name" />
+            <input type="text" name="creator" placeholder="Enter the creator" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

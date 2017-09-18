@@ -1,0 +1,10 @@
+export default {
+    project:{
+        mainBox:{
+            backgroundColor:'#d81e05',
+            border:'1px solid grey',
+            padding:5,
+            color:'white'    
+        }
+    }
+}
