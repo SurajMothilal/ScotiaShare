@@ -3,7 +3,7 @@ import constants from '../constants/constants'
 
 var initialState = {
     list:[],
-    selectedProject:0
+    selectedProject:1
 }
 
 export default (state=initialState, action) => {

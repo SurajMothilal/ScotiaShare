@@ -10,4 +10,8 @@ router.get('/createProject', function(req, res, next){
     res.render('createProject', null)
 })
 
+router.get('/createPerson', function(req, res, next){
+    res.render('createPerson', null)
+})
+
 module.exports = router;

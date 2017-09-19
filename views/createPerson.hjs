@@ -1,0 +1,13 @@
+<!DOCTYPE=html>
+<html>
+    <head>
+        <title>CreatePerson</title>
+    </head>
+    <body>
+        <form action="/api/person" method="POST">
+            <input type="text" name="name" placeholder="Enter a name" />
+            <input type="text" name="designation" placeholder="Enter a designation" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

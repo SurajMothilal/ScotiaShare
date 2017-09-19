@@ -7,6 +7,9 @@
         <form action="/api/project" method="POST">
             <input type="text" name="name" placeholder="Enter a name" />
             <input type="text" name="creator" placeholder="Enter the creator" />
+            <input type="text" name="requirements" placeholder="Enter requirements" />
+            <input type="text" name="deadline" placeholder="Enter the deadline" />
+            <input type="text" name="description" placeholder="Enter a description" />
             <input type="submit" value="Submit" />
         </form>
     </body>

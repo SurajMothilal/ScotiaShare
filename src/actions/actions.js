@@ -13,5 +13,11 @@ export default {
             type:constants.PROJECT_SELECTED,
             payload:index
         }
+    },
+    personLoaded:(person)=> {
+        return {
+            type:constants.PERSON_LOADED,
+            payload:person
+        }
     }
 }

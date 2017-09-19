@@ -2,10 +2,22 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
 class Information extends Component {
+    
+    getProject(){
+         const project = this.props.projectList[this.props.selectedProject]
+         if(project==null){
+             return 'Loading'
+         }
+         return project
+    }
+    
     render(){
+        const project = this.getProject()
         return (
             <div>
-                Information for {this.props.selectedProject}
+                <h3>{project.name}</h3>
+                <h4>{project.status}</h4>
+                <span>{project.deadline}</span>
             </div>    
         )
     }
@@ -13,7 +25,8 @@ class Information extends Component {
 
 const stateToProps = (state)=> {
     return {
-        selectedProject:state.project.selectedProject
+        selectedProject:state.project.selectedProject,
+        projectList:state.project.list
     }
 } 
 
